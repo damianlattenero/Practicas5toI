@@ -17,9 +17,19 @@ class Automovil {
     }
 
     public void manejar(int km){
-        this.kilometraje = kilometraje + km;
-        double ltCons = km * this.consumo;
-        this.cantidadLitros = cantidadLitros - ltCons;
+
+        double litrosConsumidos = km * this.consumo;
+
+        double consumido = cantidadLitros - litrosConsumidos;
+
+        if(consumido < 0){
+            System.out.println("No podes manejar esa cantidad de kilometros");
+        }else{
+            this.cantidadLitros = cantidadLitros - litrosConsumidos;
+            this.kilometraje = kilometraje + km;
+        }
+
+
     }
 
     public void llenarTanqueDeNafta(){
