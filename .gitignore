@@ -4,7 +4,9 @@
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
+.idea
+out
+PracticaJava.iml
 # Package Files #
 *.jar
 *.war
