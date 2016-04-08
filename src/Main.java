@@ -1,6 +1,12 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Segundo commit a git");
+       Automovil focus = new Automovil("POG 059", 12000, 50, 45, 5);
+        focus.manejar(100);
+        System.out.println(focus.cantidadLitros);
+
+        focus.llenarTanqueDeNafta();
+        System.out.println(focus.cantidadLitros);
+        System.out.println(focus.kilometraje);
     }
 }
